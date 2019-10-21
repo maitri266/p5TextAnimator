@@ -1,4 +1,6 @@
-
+<?php
+    //echo "p5TextAnimator";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
