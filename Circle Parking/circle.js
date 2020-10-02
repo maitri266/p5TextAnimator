@@ -17,6 +17,15 @@ Circle.prototype.show = function(){
 
 }
 
+Circle.prototype.displayCircle = function(){
+	fill(this.colorRed,this.colorBlue,this.colorGreen);
+	// fill(255);
+	noStroke();
+	// strokeWeight(2);
+	ellipse(this.x,this.y,this.r*2,this.r*2);
+
+}
+
 Circle.prototype.grow = function(){
 	if(this.growing && this.r < 8){
 		this.r = (this.r + 1 );
