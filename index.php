@@ -104,6 +104,14 @@
             <a href="Waving Balls/index.html"><button id="myBtn">Waving Balls</button></a>
             <a href="Circle Parking Glowing/index.html"><button id="myBtn">Flashing Atoms</button></a>            
             <?php 
+                $year=2020;
+                if($year > 2018){
+                    echo "Not good";
+                }else if($year==2020){
+                    echo "Worst";
+                }else{
+                    echo "Dead";
+                }
                 if(isset($_POST['submit'])){
                     $file_name = $_FILES['file']['name'];  
                     $file_extension = explode(".", $_FILES["file"]["name"]);
